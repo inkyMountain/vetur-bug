@@ -2,8 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <!-- try type "thisDataPropertyWillNotBeSuggestedByVetur" between the following braces -->
-    {{  }}
+    <!-- try type "thisDataPropertyWillNotBeSuggestedByVetur" between the following braces. -->
+    <!-- It should suggest "thisDataPropertyWillNotBeSuggestedByVetur" when you type "thisData" but fail-->
   </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
   },
   data() {
     return {
-      thisDataPropertyWillNotBeSuggestedByVetur: ''
+      thisDataPropertyWillNotBeSuggestedByVetur: '',
+      xxx: ''
     }
   }
 }
