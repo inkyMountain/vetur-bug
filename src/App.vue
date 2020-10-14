@@ -2,6 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- try type "thisDataPropertyWillNotBeSuggestedByVetur" between the following braces -->
+    {{  }}
   </div>
 </template>
 
@@ -12,6 +14,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      thisDataPropertyWillNotBeSuggestedByVetur: ''
+    }
   }
 }
 </script>
